@@ -1,0 +1,9 @@
+stages:
+  - build
+build:
+  stage: build
+  script:
+    - chmod 777 *
+    - cp -R * /var/www/html/venkat/
+  tags:
+    - build
